@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o tracker main.go
+RUN go build -o tracker
 
 FROM debian:stable-slim
 WORKDIR /root/
